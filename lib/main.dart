@@ -97,6 +97,9 @@ class _MyAppsState extends State<MyApps> {
               ),
             ),
             SizedBox(
+              height: 20,
+            ),
+            SizedBox(
               width: 360,
               height: 400,
               child: Container(
@@ -151,7 +154,7 @@ class _MyAppsState extends State<MyApps> {
                                   ),
                                   SizedBox(width: 2),
                                   Text(
-                                    '8.05/10 IMDb',
+                                    '8,5/10 IMDb',
                                     style: TextStyle(
                                         color: Colors.grey, fontSize: 13),
                                   ),
@@ -165,67 +168,6 @@ class _MyAppsState extends State<MyApps> {
                     SizedBox(
                       width: 15,
                     ),
-                    // GestureDetector(
-                    //   onTap: () {
-                    //     setState(() {
-                    //       click = !click;
-                    //     });
-                    //     Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //         builder: (context) => Post(),
-                    //       ),
-                    //     );
-                    //   },
-                    //   child: Container(
-                    //     // decoration: BoxDecoration(color: Colors.grey),
-                    //     width: 160,
-                    //     child: Hero(
-                    //       tag: 'Post',
-                    //       // transitionOnUserGestures: Paint.enableDithering,
-                    //       child: Column(
-                    //         crossAxisAlignment: CrossAxisAlignment.start,
-                    //         children: [
-                    //           Image.asset(
-                    //             'assets/images/IMG_Poster0.png',
-                    //           ),
-                    //           SizedBox(
-                    //             height: 15,
-                    //           ),
-                    //           Text(
-                    //             'No Game No\nLife',
-                    //             style: TextStyle(
-                    //                 fontSize: 20,
-                    //                 fontWeight: FontWeight.bold,
-                    //                 fontFamily: 'ABeeZee'),
-                    //           ),
-                    //           SizedBox(
-                    //             height: 6,
-                    //           ),
-                    //           Row(
-                    //             mainAxisAlignment: MainAxisAlignment.start,
-                    //             children: [
-                    //               Icon(
-                    //                 Icons.star,
-                    //                 color: Color(0xfffFFC319),
-                    //                 size: 23.0,
-                    //               ),
-                    //               SizedBox(width: 2),
-                    //               Text(
-                    //                 '8.05/10 IMDb',
-                    //                 style: TextStyle(
-                    //                     color: Colors.grey, fontSize: 13),
-                    //               ),
-                    //             ],
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    SizedBox(
-                      width: 15,
-                    ),
                     GestureDetector(
                       onTap: () {
                         setState(() {
@@ -234,27 +176,26 @@ class _MyAppsState extends State<MyApps> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Post(),
+                            builder: (context) => Post2(),
                           ),
                         );
                       },
                       child: Container(
-                        // decoration: BoxDecoration(color: Colors.grey),
                         width: 160,
                         child: Hero(
-                          tag: 'Post1',
+                          tag: 'Post_II',
                           // transitionOnUserGestures: Paint.enableDithering,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                'assets/images/IMG_Poster0.png',
+                                'assets/images/IMG_Poster2.png',
                               ),
                               SizedBox(
                                 height: 15,
                               ),
                               Text(
-                                'No Game No\nLife',
+                                'Kaminaki sekai no kamisama ',
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -273,7 +214,7 @@ class _MyAppsState extends State<MyApps> {
                                   ),
                                   SizedBox(width: 2),
                                   Text(
-                                    '8.05/10 IMDb',
+                                    '6,84/10 IMDb',
                                     style: TextStyle(
                                         color: Colors.grey, fontSize: 13),
                                   ),
@@ -283,6 +224,489 @@ class _MyAppsState extends State<MyApps> {
                           ),
                         ),
                       ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post1(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_I',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster1.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Oshi No Ko',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '10/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post3(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_III',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster3.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Isekai On Turn Kill Neesan',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '6,4/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post4(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_IV',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster4.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'DanMachi',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '9,5/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post5(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_V',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster5.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'The Eminence in Shadow',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '8,5/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post6(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_VI',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster6.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Jigokuraku',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '8/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post7(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_VII',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster7.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Mashle',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '7,5/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post8(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_VIII',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster8.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Kimisen',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '7,1/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          click = !click;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Post9(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 160,
+                        child: Hero(
+                          tag: 'Post_IX',
+                          // transitionOnUserGestures: Paint.enableDithering,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                'assets/images/IMG_Poster9.png',
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Text(
+                                'Arifureta',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'ABeeZee'),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    color: Color(0xfffFFC319),
+                                    size: 23.0,
+                                  ),
+                                  SizedBox(width: 2),
+                                  Text(
+                                    '7,3/10 IMDb',
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                   ],
                 ),
