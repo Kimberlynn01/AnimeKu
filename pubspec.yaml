@@ -77,6 +77,10 @@ flutter:
       fonts:
         - asset: assets/fonts/IconsDart.ttf
     #
+    - family: IconsDart2
+      fonts:
+        - asset: assets/fonts/IconsDart2.ttf
+    #
     - family: Merriweather
       fonts:
         - asset: assets/fonts/Merriweather/Merriweather-Regular.ttf
