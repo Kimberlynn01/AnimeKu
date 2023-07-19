@@ -303,146 +303,121 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            Container(
-              width: 400,
-              height: 250,
-              // decoration: BoxDecoration(color: Colors.redAccent),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Image.asset(
-                    'assets/images/IMG_Poster7.png',
-                    width: 130,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      // SizedBox(
-                      //   height: 8,
-                      // ),
-                      Text(
-                        'Mashle',
-                        style: TextStyle(
-                            fontSize: 25,
-                            fontFamily: 'ABeeZee',
-                            fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Icon(
-                            Icons.star,
-                            color: Color(0xfffFFC319),
-                          ),
-                          Text(
-                            '7,5/10 IMDb',
-                            style: TextStyle(color: Colors.grey, fontSize: 15),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      SizedBox(
-                        width: 240,
-                        height: 40,
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            Row(
-                              children: [
-                                Container(
-                                  width: 75,
-                                  height: 25,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                    color: Color(0xff88A4E8),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'ACTION',
-                                      style: TextStyle(
-                                        fontSize: 10,
-                                        color: Colors.white,
-                                        fontFamily: 'Mulish',
-                                        letterSpacing: 1,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  width: 75,
-                                  height: 25,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                    color: Color(0xff88A4E8),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'COMEDY',
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          color: Colors.white,
-                                          fontFamily: 'Mulish',
-                                          letterSpacing: 1,
-                                          fontWeight: FontWeight.w900),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  width: 75,
-                                  height: 25,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                    color: Color(0xff88A4E8),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      'FANTASY',
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          color: Colors.white,
-                                          fontFamily: 'Mulish',
-                                          letterSpacing: 1,
-                                          fontWeight: FontWeight.w900),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+            buildItemPopular(
+              'assets/images/IMG_Poster7.png',
+              'Mashle',
+              '7,1/10IMDb',
+              ['COMEDY', 'ACTION', 'FANTASY'],
+            ),
+            buildItemPopular(
+              'assets/images/IMG_Poster0.png',
+              'No Game No Life',
+              '99/10ADM',
+              ['ISEKAI', 'COMEDY', 'ADVANTURE', 'Ecchi', 'Supernatural'],
             ),
           ],
         ),
       ),
       // bottomNavigationBar: Stack(),
+    );
+  }
+
+  Widget buildItemPopular(
+    String imagePath,
+    String title,
+    String rate,
+    List<String> genres,
+  ) {
+    return Container(
+      width: 400,
+      height: 210,
+      // decoration: BoxDecoration(color: Colors.redAccent),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 10,
+          ),
+          Image.asset(
+            imagePath,
+            width: 130,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // SizedBox(
+              //   height: 8,
+              // ),
+              Text(
+                title,
+                style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'ABeeZee',
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Icon(
+                    Icons.star,
+                    color: Color(0xfffFFC319),
+                  ),
+                  Text(
+                    rate,
+                    style: TextStyle(color: Colors.grey, fontSize: 15),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              SizedBox(
+                width: 240,
+                height: 40,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Row(
+                      children: genres
+                          .map(
+                            (genre) => Container(
+                              margin: EdgeInsets.only(right: 5),
+                              width: 90,
+                              height: 25,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                color: Color(0xff88A4E8),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  genre,
+                                  style: TextStyle(
+                                      fontSize: 11,
+                                      color: Colors.white,
+                                      fontFamily: 'Mulish',
+                                      letterSpacing: 1,
+                                      fontWeight: FontWeight.w900),
+                                ),
+                              ),
+                            ),
+                          )
+                          .toList(),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 

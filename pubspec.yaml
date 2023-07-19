@@ -94,6 +94,9 @@ flutter:
     - family: Mulish
       fonts:
         - asset: assets/fonts/Mulish/Mulish-VariableFont_wght.ttf
+    - family: Mulish_Bold
+      fonts:
+        - asset: assets/fonts/Mulish/static/Mulish-Bold.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
