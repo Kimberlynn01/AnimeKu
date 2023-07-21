@@ -315,6 +315,16 @@ class _HomePageState extends State<HomePage> {
               '99/10ADM',
               ['ISEKAI', 'COMEDY', 'ADVANTURE', 'Ecchi', 'Supernatural'],
             ),
+            buildItemPopular('assets/images/IMG_Poster2.png',
+                'Kaminaki sekai no\nKamisama', '6,84', [
+              'Action',
+              'Comedy',
+              'Parody',
+              'Isekai',
+              'Seinen',
+              'Ecchi',
+              'Fantasy',
+            ])
           ],
         ),
       ),

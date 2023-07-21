@@ -57,7 +57,7 @@ class _Post1State extends State<Post1> {
               ['MAYAD', 'SUPRANATURAL', 'DRAMA', 'SEINEN'],
               '20',
               '10/10',
-              '',
+              'Oshi no Ko adalah sebuah cerita tentang Eripiyo, seorang penggemar idol yang sangat mencintai Maina, seorang idol muda yang berbakat. Meskipun Eripiyo adalah salah satu dari banyak penggemar Maina, dia berjuang untuk menunjukkan dukungan dan cintanya yang istimewa kepada idolanya tersebut. Cerita ini mengeksplorasi tentang obsesi seorang fan, persahabatan, dan perjuangan di dunia hiburan idol.',
               '20 Episode',
               '1 Episode',
               'Maddog',
@@ -82,52 +82,28 @@ class _Post2State extends State<Post2> {
       body: SingleChildScrollView(
           child: Column(
         children: [
-          Stack(
-            children: [
-              Container(
-                child: Hero(
-                  tag: 'Post_II',
-                  child: Image.asset(
-                    'assets/images/IMG_Poster2.png',
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 50, left: 10),
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.pop(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => MyApps(),
-                          ),
-                        );
-                      },
-                      child: Row(
-                        children: [
-                          Icon(
-                            IconsDart.back,
-                            color: Colors.white,
-                            size: 40,
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 285,
-                    ),
-                    Icon(
-                      IconsDart.menu_1,
-                      color: Colors.white,
-                      size: 35,
-                    )
-                  ],
-                ),
-              ),
-            ],
-          ),
+          buildItemPost(
+              context,
+              'Post_II',
+              'assets/images/IMG_Poster2.png',
+              'Kaminaki Sekai no\nKamisama',
+              '7,1/10',
+              [
+                'Action',
+                'Comedy',
+                'Fantasy',
+                'Ecchi',
+                'Seinen',
+                'Isekai',
+                'Parody'
+              ],
+              '13 Episode',
+              'IMDb',
+              'Secara garis besar menganglkat cerita mengenai seorang pemuda yang bernama Yukito yang lahir sebagai putra pendiri sekte yang memuja dewa misterius Mitama.',
+              '13 Episode ',
+              'Episode 13',
+              'Pallete',
+              () => null)
         ],
       )),
     );
@@ -629,7 +605,7 @@ Widget buildItemPost(
               Container(
                 margin: EdgeInsets.only(top: 350.0),
                 width: 400,
-                height: 600,
+                height: 650,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(
@@ -860,7 +836,7 @@ Widget buildItemPost(
                                 ),
                                 onPressed: () {},
                                 child: Container(
-                                  width: 310,
+                                  width: 325,
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
