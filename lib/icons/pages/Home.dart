@@ -476,7 +476,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(color: Colors.grey, fontSize: 13),
                   ),
                 ],
-              )
+              ),
             ],
           ),
         ),

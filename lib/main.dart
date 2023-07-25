@@ -6,6 +6,8 @@ import 'package:flutter_apps_anime/icons/pages/Subscribe.dart';
 import 'package:flutter_apps_anime/icons/icons_dart2_icons.dart';
 import 'package:flutter_apps_anime/icons/pages/User.dart';
 
+import 'icons/pages/Settings.dart';
+
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -27,6 +29,7 @@ class _MyAppsState extends State<MyApps> {
     HomePage(),
     Subs(),
     SchedulePage(),
+    Settings(),
     UserPage(),
   ];
 
@@ -44,11 +47,14 @@ class _MyAppsState extends State<MyApps> {
           Icon(IconsDart2.icon_bell),
           Icon(IconsDart2.icon_calendar),
           Icon(IconsDart2.icon_settings),
+          Icon(Icons.person_2_outlined),
         ],
         onTap: (value) {
-          setState(() {
-            _currentIndex = value;
-          });
+          setState(
+            () {
+              _currentIndex = value;
+            },
+          );
         },
       ),
     );
